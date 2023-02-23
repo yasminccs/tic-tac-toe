@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <link rel="shortcut icon" href="ttt.ico" type="image/x-icon">
+  <title>Tic Tac Toe</title>
+</head>
+<body data-theme="dark">
+    <div id="btnTheme">
+        <button type="button" id="themeSwitcher">Dark/Light</button>
+    </div>
+  <div class="board" id="board">
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+  </div>
+
+  <section id="points">
+    <div id="player-1">
+     <h3 class="p1">JOGADOR 1 ( X )</h3>
+     <h3 class="score" id="pt1">0</h3>
+    </div>
+
+    <div id="empate">
+      <h3 class="emp">-</h3>
+      <h3 class="score" id="pt2">0</h3>
+    </div>
+
+    <div id="player-2">
+      <h3 class="p2">JOGADOR 2 ( O )</h3>
+      <h3 class="score" id="pt3">0</h3>
+    </div>
+  </section>
+
+  <div class="winning-message" id="winningMessage">
+    <div data-winning-message-text></div>
+    <button id="restartButton">Restart</button>
+  </div>
+
+  <section class="lala" id="boxFeedback">
+    <div id="container">
+        <h1 id="titleBox">Regras do jogo</h1>
+        <p id="gameRules">Participam duas pessoas, que jogam alternadamente, preenchendo cada um dos espaços vazios. Cada participante poderá usar um símbolo (X ou O). Vence o jogador que conseguir formar primeiro uma linha com três símbolos iguais, seja ela na horizontal, vertical ou diagonal.</p>
+        <p class="cntd">
+            <button id="play" type="button" onclick="fecho()">Play</button>
+        </p>
+    </div>
+  </section>
+</body>
+</html>
