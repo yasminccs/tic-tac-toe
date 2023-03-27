@@ -1,2 +1,2 @@
 # tic-tac-toe
-Tic tac Toe Game Basic
+Tic Tac Toe Game Basic
