@@ -50,7 +50,7 @@ function startGame() {
   winningMessageElement.classList.remove('show')
 }
 
-function handleClick(e) { //lida com os cliques
+function handleClick(e) {
   const cell = e.target
   const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
 
@@ -115,7 +115,7 @@ function checkWin(currentClass) { //verifica se no tabulueiro há alguma daquela
   })
 }
 
-document.getElementById("themeSwitcher").addEventListener('click', function () {
+document.getElementById("themeSwitcher").addEventListener('click', () => {
   if (body.dataset.theme === "dark"){
     root.style.setProperty("--bg-color", "#fff")
     root.style.setProperty("--color", "#000")
@@ -127,4 +127,6 @@ document.getElementById("themeSwitcher").addEventListener('click', function () {
     root.style.setProperty("--shadow", "#686767")
     body.dataset.theme = "dark"
   }
+  //const themeChoose = body.dataset.theme
+  //localStorage.setItem('theme', themeChoose) => não funciona
 })

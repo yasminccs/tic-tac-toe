@@ -17,7 +17,6 @@ body {
     background-color: var(--bg-color);
 }
 
-
 section#boxFeedback{
     display: none;
     background-color: #000000e3;
